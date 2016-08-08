@@ -1,0 +1,28 @@
+<div class="table-responsive">
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>User name</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Company</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in $ctrl.users" ng-click="$ctrl.selectLine(user.id)">
+        <th scope="row" ng-bind="user.id"></th>
+        <td ng-bind="user.name"></td>
+        <td ng-bind="user.username"></td>
+        <td ng-bind="user.email"></td>
+        <td ng-bind="user.address.city"></td>
+        <td ng-bind="user.phone"></td>
+        <td ng-bind="user.website"></td>
+        <td ng-bind="user.company.name"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

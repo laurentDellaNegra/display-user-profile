@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <button class="btn btn-default" type="button" ng-click="$ctrl.refresh()">Refresh</button>
+  </div>
+  <div class="row">
+    <!-- Error message -->
+    <div ng-if="$ctrl.status.isValid === false" class="alert alert-danger" ng-bind="$ctrl.status.message"></div>
+    <!-- Table panel -->
+    <users-table users="$ctrl.users" on-display-profile="$ctrl.displayProfile(id)" ng-show="$ctrl.users"></users-table>
+  </div>
+</div>

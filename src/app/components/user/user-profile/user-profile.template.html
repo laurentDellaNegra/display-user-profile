@@ -1,0 +1,10 @@
+<div>
+  <h1>User profile (id: {{$ctrl.user.id}})</h1>
+  <p><strong>Name:</strong> {{$ctrl.user.name}}</p>
+  <p><strong>User name:</strong> {{$ctrl.user.username}}</p>
+  <p><strong>Email:</strong> {{$ctrl.user.email}}</p>
+  <p><strong>address:</strong> {{$ctrl.user.address.suite}} {{$ctrl.user.address.street}} {{$ctrl.user.address.city}} - {{$ctrl.user.address.zipcode}} (coord: {{$ctrl.user.address.geo.lat}}/{{$ctrl.user.geo.lng}})</p>
+  <p><strong>Phone:</strong> {{$ctrl.user.phone}}</p>
+  <p><strong>Website:</strong> {{$ctrl.user.website}}</p>
+  <p><strong>Company:</strong> {{$ctrl.user.company.name}} - {{$ctrl.user.company.catchPhrase}} {{$ctrl.user.company.bs}}</p>
+</div>
