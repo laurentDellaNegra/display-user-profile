@@ -11,12 +11,12 @@ describe('component: nav', () => {
   }));
 
   it(`should return 'active'`, () => {
-    spyOn(location, 'path').and.returnValue('http://localhost:8080/#/calculator');
-    expect(ctrl.getClass('http://localhost:8080/#/calculator')).toBe('active');
+    spyOn(location, 'path').and.returnValue('http://localhost:8080/#/users');
+    expect(ctrl.getClass('http://localhost:8080/#/users')).toBe('active');
   });
 
   it(`should return ''`, () => {
     spyOn(location, 'path').and.returnValue('http://localhost:8080/#/asdas');
-    expect(ctrl.getClass('http://localhost:8080/#/calculator')).toBe('');
+    expect(ctrl.getClass('http://localhost:8080/#/users')).toBe('');
   });
 });
