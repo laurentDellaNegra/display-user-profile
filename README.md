@@ -1,10 +1,5 @@
 # Display User Profile
 
-## v1.0.0
-
-
-## Design
-
 ## Built with
 
 * Angular 1.5
@@ -12,7 +7,6 @@
 * webpack
 * es6/es2015
 * karma & jasmine
-* flow for typing js
 
 ## Quick start
 
@@ -34,6 +28,9 @@ $ npm start
 
 go to [http://localhost:8080](http://localhost:8080) in your browser.
 
+##Tomcat
+
+If you want deploy directly on Tomcat server just take the dist folder and put it on tomcat.
 
 ## Build files
 

@@ -21,7 +21,8 @@
   "homepage": "https://github.com/LaurentDellaNegra/display-user-profile",
   "dependencies": {
     "angular": "*",
-    "bootstrap": "*"
+    "bootstrap": "*",
+    "jquery": "*"
   },
   "devDependencies": {
     "angular-mocks": "*",

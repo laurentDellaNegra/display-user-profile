@@ -149,7 +149,14 @@ module.exports = function makeWebpackConfig () {
 
       // Extract css files
       // Disabled when in test mode or not in build mode
-      new ExtractTextPlugin('[name].[hash].css', {disable: !isProd})
+      new ExtractTextPlugin('[name].[hash].css', {disable: !isProd}),
+
+      //jQuery plugin
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        jquery: 'jquery',
+      })
     );
   }
 
