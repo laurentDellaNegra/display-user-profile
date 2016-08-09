@@ -10,7 +10,7 @@ class UsersService {
 
   getUsers() {
     // return this.$http.get('./users.json').then((data) => {
-    return this.$http.get('http://jsonplaceholder.typicode.com/users').then((data) => {
+    return this.$http.get('https://jsonplaceholder.typicode.com/users').then((data) => {
       //success
       return data.data;
     },(reason) => {
